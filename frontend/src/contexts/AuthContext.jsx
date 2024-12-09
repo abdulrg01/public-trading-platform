@@ -17,7 +17,6 @@ export const AuthProvider = ({ children }) => {
   const [balances, setBalances] = useState(null);
   const [error, setError] = useState(null);
 
-   // Fetch user balances when authenticated
    useEffect(() => {
     const fetchUserData = async () => {
       if (isAuthenticated && username) {
